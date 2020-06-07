@@ -1,0 +1,471 @@
+@import 'palette.less';
+
+//Mobile first CSS design, width lower than 310px begins to lose functional design
+
+//Fixed header provides always visible navigation menu for visitors
+header {
+    position: fixed;
+    font-family: 'Overpass', sans-serif;
+    height: 56px;
+    width: 100%;
+    z-index: 500;
+}
+
+//CSS for body tag
+body {
+    background-image: linear-gradient(@color1, @color3);
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+//CSS for main tag
+main {
+    padding: 20px;
+    padding-top: 0;
+}
+
+.centered {
+    display: table;
+    margin: 1em auto;
+}
+
+//Anchor links
+
+#about {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
+
+#product {
+    display: block;
+    position: relative;
+    top: -15px;
+    visibility: hidden;
+}
+
+#order {
+    display: block;
+    position: relative;
+    top: -60px;
+    visibility: hidden;
+}
+
+#location {
+    display: block;
+    position: relative;
+    top: -55px;
+    visibility: hidden;
+}
+
+#footer {
+    display: block;
+    position: relative;
+    top: -10px;
+    visibility: hidden;
+}
+
+
+//CSS for images displayed on site. 
+
+//Crom Fitness logo with text beneath image located at top of site
+.crom-noText {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 65px;
+    width: 35%;
+}
+
+
+//CSS for h1 tag containing "CROM FITNESS" text underneath image located at top of site
+h1 {
+    color: @color5;
+    font-family: 'Overpass', sans-serif;
+    font-size: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+//CSS for section break headers RED. HEAD. ER.
+h1.red-head {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+//CSS for h2 tag instances
+.red-head ~ p {
+    font-size: 20px;
+    margin: 30px;
+    text-align: center;
+}
+
+//CSS for containers
+.container {
+    border: 1px solid @color6;
+}
+
+//CSS for links located within an h2 tag
+h2 a {
+    text-decoration: none;
+}
+
+//CSS for class red-head, affects h2 tags for different page sections
+.red-head {
+    color: @color5;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.payment {
+    margin-bottom: 0;
+}
+
+//CSS for h2 tag containing "Place Order"
+#order-place {
+    text-align: center;
+    border: 2.5px solid @color3;
+}
+
+//CSS for all instances of the "weight-title" class affecting text below weight related images
+.weight-title {
+    position: relative;
+    color: @color4;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+}
+
+.cast-iron {
+    display: block;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.black-iron {
+    display: block;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.encased-iron {
+    display: block;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.col-shirt {
+    align-content: center;
+    width: 47.33%;
+}
+
+.shirt-temp {
+    margin-top: 75px;
+    width: 100%;
+}
+
+//CSS for "Location" section-----Location/Map Section
+
+//CSS container setting for google map
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: auto;
+    margin: 0;
+    width: 100%;
+}
+
+//CSS for google map iframe settings
+iframe {
+    height: 425px;
+    width: 100%;
+    margin: 0;
+}
+
+//CSS for "Place Order" Section
+
+//CSS for h1 tag containing "Place Order" text
+h1.place-order {
+    text-align: center;
+}
+
+/* Form Area */
+table {
+    background-color: @color2;
+    padding: 20px;
+    width: 100%;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 99%;
+    padding: 5px 0px 5px 0px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: @color3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: @color5;
+    color: @color6;
+}
+
+.col-35 {
+    float: left;
+    width: 35%;
+    margin-top: 5px;
+}
+
+.col-80 {
+    float: left;
+    width: 80%;
+    margin-top: 5px;
+}
+
+.col-100 {
+    float: left;
+    width: 100%;
+}
+
+.form-img {
+    background: url(../images/cromJUSTHandHexAlphaChan.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.credit-year {
+    margin-top: 10px;
+}
+
+.cards-duh {
+    font-size: 45px;
+    margin: 0;
+}
+
+//CSS affects text color of majority of lower half of page text
+.text-color {
+    color: @color1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cost-included {
+    margin-top: 60px;
+}
+
+.reg-button {
+    height: 40px;
+    color: @color2;
+    width: 100%;
+}
+
+//CSS for footer section
+
+footer {
+    padding: 0;
+    align-items: center;
+}
+
+//CSS affects paragraph tags within footer
+footer p {
+    text-align: center;
+    margin: 0;
+}
+
+//CSS for copyright at bottom of footer
+.copyright {
+    clear: both;
+    align-content: center;
+    color: @color1;
+    line-height: 20px;
+    font-size: 0.8em;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: @color1;
+    }
+}
+
+.copyright a:hover {
+    color: @color5;
+}
+
+
+//CSS for footer menu links
+.footer-menu a {
+    color: @color1;
+    text-decoration: none;
+}
+
+//CSS for footer menu links on hover
+.footer-menu a:hover {
+    color: @color5;
+}
+
+//CSS for social media icons contained in footer
+.media-icons {
+    align-content: center;
+    font-size: 45px;
+    text-align: center;
+    margin: 0;
+}
+
+//CSS for social media icon color and underline removal
+.media-icons a {
+    text-decoration: none;
+    color: @color5;
+}
+
+.media-icons a:hover {
+    color: @color1;
+}
+
+//CSS Logo in footer dimensions
+#footer-logo {
+    align-content: center;
+    width: 90%;
+}
+
+//CSS for footer alignment
+
+.column-footer-nav {
+    float: left;
+    padding-left: 15px;
+    width: 30%;
+    list-style-type: none;
+    text-align: center;
+}
+
+.column-footer-nav li {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.column-media-icons {
+    float: left;
+    padding-top: 40px;
+    width: 25%;
+    justify-content: space-between;
+}
+
+.column-footer-logo {
+    float: right;
+    width: 40%;
+}
+
+//List hexagon bullets
+
+
+.column-detail ul {
+    text-align: left;
+    list-style-image: url('../images/blackhex.png');
+}
+
+
+//End of h1 custom medis query
+
+//CSS Footer placement for screens below 565px
+@media screen and (max-width: 735px) {
+
+    .column-footer-nav {
+        width: 100%;
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    .column-media-icons {
+        width: 100%;
+        padding: 0;
+    }
+
+    .column-footer-logo {
+        width: 100%;
+    }
+
+    .col-35 {
+        //Alterered so form text reads better on mobile
+        float: left;
+        width: 50%;
+        margin-top: 5px;
+    }
+
+    #footer-logo {
+        width: 75%;
+    }
+
+}
+
+//Tablet Media Query -- Affects screen sizes 786px and above
+@media screen and (min-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Create two equal columns that sit next to each other */
+    .column-product {
+        float: left;
+        width: 70%;
+        padding: 10px;
+    }
+
+    .column-detail {
+        float: left;
+        width: 30%;
+        padding: 25px;
+    }
+
+    // T-Shirt CSS to be next to one another
+
+    .tshirt-front {
+        float: left;
+        width: 50%;
+        margin-top: 100px;
+    }
+
+    .tshirt-back {
+        float: left;
+        width: 50%;
+        margin-top: 100px;
+    }
+
+    /* Clear floats after the columns */
+    .row-product:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+}
+
+//Desktop Media Query -- Affects screen sizes 1025px and above
+@media screen and (min-width: 1025px) {}
