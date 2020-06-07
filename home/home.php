@@ -15,9 +15,8 @@
         <p>I make beautiful and usable websites.</p>
         <p>Explore my site to learn more!</p>
         </div>
-        <a href="#contact-form"><button type="button" class="btn">
-      Hire Zack
-    </button></a>
+        <a href="#contact-form" type="button" class="btn">
+      Hire Zack</a>
     </div>
 </div>
 
