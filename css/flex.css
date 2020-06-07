@@ -1,0 +1,61 @@
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  padding: 0 2px;
+}
+
+/* Create three equal columns that sit next to one another */
+.flex-work-div {
+  flex: 33.333%;
+  max-width: 33.333%;
+  padding: 2px 2px;
+}
+
+.about-scripts ul li {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  flex: 33.3%;
+}
+
+/* Create two equal columns that sit next to one another */
+.flex-about-div {
+  flex: 55%;
+  max-width: 50%;
+  padding: 2%
+}
+
+.flex-about-div img {
+  height: 100%;
+}
+
+.flex-div img {
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of three columns */
+@media screen and (max-width: 800px) {
+  .flex-div {
+    flex: 55%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1125px) {
+  .flex-div {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+  .box :nth-child(1) { order: 1; }
+  .box :nth-child(2) { order: 2; }
+  .box :nth-child(3) { order: 3; }
+  .box :nth-child(4) { order: 4; }
+  .box :nth-child(5) { order: 5; }
+  .box :nth-child(6) { order: 6; }
+  }

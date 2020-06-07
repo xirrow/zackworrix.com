@@ -1,0 +1,103 @@
+.logo h4 a {
+  color: rgba(255, 255, 0, 0.85);
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: -2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 48px;
+  max-height: 64px;
+  width: 100%;
+  background-color: #282828;
+  color: yellow;
+  position: fixed;
+  overflow: hidden;
+  z-index: 2;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+}
+.nav-links li {
+  list-style: none;
+  margin-right: 75px;
+  border-left: 20px solid transparent;
+  transition: 0.3s;
+}
+.nav-links li:hover {
+  border-left: 20px solid rgba(255, 255, 0, 0.85);
+}
+.nav-links a {
+  color: rgba(255, 255, 0, 0.85);
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+/*-- QIAN --*/
+.qian {
+  display: none;
+  cursor: pointer;
+}
+.qian div {
+  width: 25px;
+  height: 3px;
+  background-color: rgba(255, 255, 0, 0.85);
+  margin: 5px;
+  transition: all 0.2s ease;
+}
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: fixed;
+    height: 100vh;
+    right: 0px;
+    top: 6vh;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .qian {
+    display: block;
+  }
+}
+.nav-active {
+  transform: translateX(0%);
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.crunch .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.crunch .line2 {
+  opacity: 0;
+}
+.crunch .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

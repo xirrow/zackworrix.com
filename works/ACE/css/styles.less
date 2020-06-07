@@ -1,0 +1,484 @@
+@import 'palette.less';
+
+* {
+  box-sizing: border-box;
+}
+
+html {}
+
+body {
+  margin: 0px;
+  background-color: @color1;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    color: @color2;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h2 {
+    font-style: italic;
+    font-weight: bold;
+}
+
+h6 a{
+    color: @color2;
+    margin: 0;
+    text-decoration: none;
+}
+
+footer {
+  background-color: @color3;
+}
+
+.courses {
+    color: @color2;
+}
+
+.courses-indi {
+    padding-left: 25px;
+}
+
+.linkz {
+    color: @color2;
+    margin: 0;
+    text-decoration: none;
+}
+
+.article-space {
+  padding: 25px;
+}
+
+/* Form Area */
+table {
+  background-color: @greyLight;
+  padding: 20px;
+  width: 100%;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 5px 0px 5px 5px; 
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: @color2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: @greyDarker;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: @color1;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cost-included {
+    margin-top: 60px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column-footer-nav {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  margin: 0;
+}
+
+.column-media-icons {
+  float: right;
+  width: 50%;
+  padding: 10px;
+  margin: 0;
+}
+
+.column-footer-logo {
+  float: center;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+}
+
+/* Clear floats after the columns */
+.footer-nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#footer-mail {
+    color: @color1;
+    text-decoration: none;
+}
+
+#footer-mail:hover{
+    color: @color2;
+}
+
+.reg-button {
+  height: 40px;
+  color: @color2;
+  width: 100%;
+}
+/* Widget Area */
+
+.widget-space {
+  border: 2px solid;
+  padding: 20px;
+  text-align: center;
+}
+
+.widget-space-special {
+  padding: 0;
+}
+
+#event-img {
+    width: 100%;
+}
+/*Social Media*/
+
+.twitter-timeline {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.iframe-container {
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+}
+
+.iframe-container iframe {
+position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Footer Area*/
+
+#footer-logo {
+  width: 100%;
+}
+
+/*Footer Columns*/
+
+.copyright {
+  clear: both;
+  align-content: center;
+  color: @color1;
+  line-height: 20px;
+  font-size: 0.8em;
+  text-align: center;
+  padding-top: 10px;
+}
+
+//Social media links in footer area
+i.fa-twitter{
+  color: @color2;
+  font-size: 55px;
+  padding: 10px;
+  align-content: center;
+}
+
+i.fa-twitter:hover {
+    color: @color1;
+}
+
+i.fa-facebook-official {
+  color: @color2;
+  font-size: 55px;
+  padding: 10px;
+  align-content: center;
+}
+
+i.fa-facebook-official:hover {
+    color: @color1;
+}
+
+/*Footer Navigation*/
+
+.footer-nav {
+  background-color: @color3;
+  text-align: center;
+  margin: 0;
+}
+
+.footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+.footer-nav li a {
+  display: block;
+  color: @color1;
+  padding: 10px 0px 0px 10px;
+  text-decoration: none;
+}
+
+.footer-nav li a:hover {
+  color: @color2;
+}
+
+/*NAVIGATION------------------------------------------------------------------*/
+
+#nav-logo {
+  background: @color3;
+  float: left;
+  height: 54px;
+  padding-left: 12px;
+}
+
+nav.container {
+  width: 100%;
+  z-index: 10;
+}
+
+/* Remove margins and padding from the list, and add a black background color */
+
+ul.topnav {
+  list-style-type: none;
+  overflow: auto;
+  background-color: @color3;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Style the links inside the list items */
+
+ul.topnav li a {
+  display: inline-block;
+  color: @color1;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+/* Change background color of links on hover */
+
+ul.topnav li a:hover {
+  background-color: @color2;
+  color: @color3;
+}
+
+ul.topnav li.icon {
+  display: none;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.col-25, .col-75, input[type=submit] {
+  width: 100%;
+  margin-top: 0;
+  }
+}
+
+@media (max-width: 609px) {//-----------------------------------------------------------------------MEDIA QUERY
+
+//SOCIAL MEDIA LINKS IN FOOTER
+i.fa-twitter{
+  color: @color2;
+  font-size: 55px;
+  align-content: center;
+}
+
+i.fa-facebook-official {
+  color: @color2;
+  font-size: 55px;
+  align-content: center;
+}
+    
+#mobile-img {
+  width: 100%;
+} 
+
+/* Slideshow Hide */
+
+.slideshow-container {
+  display: none;
+}
+
+}
+
+
+/*TABLET STYLESHEET---------------------------------------------------------
+
+The following CSS affects all screen sizes larger than 480 pixels wide.*/
+
+@media only screen and (min-width: 610px) {//===========================================================MEDIA QUERY
+
+#mobile-img {
+  width: 100%;
+} 
+
+/* Slideshow Hide */
+
+.slideshow-container {
+  display: none;
+}
+    
+#footer-logo {
+  float: right;
+} 
+
+.footer-nav {
+  margin-top: 20px;
+}
+    
+/*Navigation*/
+    
+ul.topnav li {
+  float: left;
+}
+    
+/*Footer Columns*/
+
+
+    
+.footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  float: left;
+}
+    
+i.fa-twitter{
+  color: @color2;
+  font-size: 55px;
+}
+
+.widget-space {
+  border: 2px solid;
+  padding: 20px;
+  text-align: center;
+}
+    
+}
+
+@media (max-width: 815px){//-----------------------------------------------------------------------MEDIA QUERY
+    
+ul.topnav li {
+  display: none;
+}
+
+ul.topnav li.icon {
+  float: right;
+  display: inline-block;
+}
+
+ul.topnav.responsive {
+  position: relative;
+  padding: 0px;
+}
+
+ul.topnav.responsive li.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+ul.topnav.responsive li {
+  float: none;
+  display: block;
+  clear: both;
+}
+
+ul.topnav.responsive li a {
+  display: block;
+  text-align: left;
+}
+
+}
+
+//Media query at 812px
+
+@media only screen and (min-width: 816px){
+    
+.topnav-right {
+  float: right;
+}
+    
+.slideshow-container {
+  display: contents;
+}
+    
+#mobile-img {
+  display: none;
+} 
+ 
+// FOOTER ALIGNMENT
+
+.column-footer-nav {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  margin: 0;
+}
+
+.column-media-icons {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  margin: 0;
+}
+
+.column-footer-logo {
+  float: right;
+  width: 60%;
+  padding: 10px;
+  margin: 0;
+}
+    
+}
+
+/*
+
+DESKTOP STYLESHEET
+
+The following CSS affects all screen sizes larger than 1024 pixels wide.
+
+*/
+
+@media only screen and (min-width: 1025px) {//-------------------------------------------------------------MEDIA QUERY
+    
+}

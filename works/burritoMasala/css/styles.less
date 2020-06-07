@@ -1,0 +1,365 @@
+@import 'palette.less';
+
+//Mobile first CSS design, width lower than 310px begins to lose functional design
+
+//Fixed header provides always visible navigation menu for visitors
+header {
+    position: fixed;
+}
+
+//CSS for body tag
+body {
+    background-color: @color1;
+    font-family: 'Droid Sans';
+    padding: 0;
+    margin: 0;
+}
+
+//CSS for main tag
+main {
+    padding: 20px;
+}
+
+//Anchor tags
+.anchor{
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;}
+
+//CSS for images displayed on site. 
+
+//Hero image of Burrito Masala food truck located at top of site
+.food-truck {
+    margin-top: 85px;
+    width: 100%;
+}
+
+//Responsive CSS for meats.png
+.masala-meats {
+    border-top: 10px solid @color3;
+    height: auto;
+    width: 100%;
+    margin: 0;
+}
+
+//Repsonsive CSS for veggies.png    
+.masala-veggies {
+    //img
+    border-top: 10px solid @color3;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+//Responsive CSS for rices.png
+.masala-rices {
+    //img
+    border-top: 10px solid @color3;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+//Responsive CSS for condiments.png
+.masala-condiments {
+    border-top: 10px solid @color3;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+//CSS for h1 tag containing "INDIAN / MEXICAN FUSION FOOD CART" text overlaying hero image of Burrito Masala food truck located at top of site
+h1.centered {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: @color5;
+    font-style: normal;
+    font-size: 5vw;
+    text-align: center;
+    text-shadow:
+        -.5px -.5px 0 @color7,
+        .5px -.5px 0 @color7,
+        -.5px .5px 0 @color7,
+        .5px .5px 0 @color7;
+}
+
+//CSS for figure tag containing "Offerings" images and corresponding text for images 
+.container {
+    margin: 0;
+}
+
+//CSS for all h2 tag instances
+h2 {
+    color: @color4;
+}
+
+//CSS for links located within an h2 tag
+h2 a {
+    text-decoration: none;
+}
+
+//CSS for h6 tag
+h6 {
+    color: @color4;
+}
+
+h6 a{
+    color: @color4;
+    text-decoration: none;
+}
+
+h6 a:hover{
+    color: @color3;
+}
+
+#tel-num a{
+    color: @color4;
+}
+
+#tel-num a:hover{
+    color: @color3;
+}
+
+//CSS for h2 tag containing "Place Order"
+#order-place {
+    text-align: center;
+    border: 2.5px solid @color3;
+}
+
+//CSS for all instances of the "food-text" class affecting text below food related images
+.food-text {
+    position: relative;
+    color: @color4;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+}
+
+//CSS for h2 tag containing "About Us" text
+h2.about-us {
+    border-top: 5px solid @color5;
+    border-bottom: 5px solid @color5;
+}
+
+//CSS for h2 tag containing "Offerings" text    
+h2.offerings {
+    border-top: 5px solid @color5;
+    border-bottom: 5px solid @color5;
+}
+
+//CSS for "Location" section-----Location/Map Section
+
+//CSS for h2 tag containing "Location" text 
+h2.location {
+    border-top: 5px solid @color5;
+    border-bottom: 5px solid @color5;
+}
+
+//CSS container setting for google map
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 200px;
+    margin: 0;
+    width: 100%;
+}
+
+//CSS for google map iframe settings
+iframe {
+    height: 200px;
+    width: 100%;
+    margin: 0;
+}
+
+//CSS for "Place Order" Section
+
+//CSS for h1 tag containing "Place Order" text
+h1.place-order {
+    text-align: center;
+    border: 2.5px solid @color3;
+}
+
+//CSS for phone-only class - Phone number and instruction information
+.phone-only {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+//CSS for footer section
+
+footer {
+    background-color: @color6;
+    box-shadow: 0 -1px 4px 0 @color4;
+    padding: 0;
+    align-items: center;
+}
+
+//CSS affects paragraph tags within footer
+footer p {
+    text-align: center;
+    margin: 0;
+}
+
+//CSS for copyright at bottom of footer
+.copyright {
+    clear: both;
+    align-content: center;
+    color: @color1;
+    line-height: 20px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+//CSS for footer menu links
+.footer-menu a {
+    color: @color4;
+    text-decoration: none;
+}
+
+//CSS for footer menu links on hover
+.footer-menu a:hover {
+    color: @color2;
+}
+
+//CSS for social media icons contained in footer
+.media-icons {
+    align-content: center;
+    font-size: 45px;
+    text-align: center;
+    margin: 0;
+    text-shadow: -1px 0 @color4,
+        0 1px @color7,
+        1px 0 @color7,
+        0 -1px @color7;
+}
+
+//CSS for social media icon color and underline removal
+.media-icons a {
+    text-decoration: none;
+    color: @color5;
+}
+
+.media-icons a:hover {
+    color: @color1;
+}
+
+//CSS Logo in footer dimensions
+#footer-logo {
+    height: 145px;
+    padding-top: 15px;
+}
+
+//CSS for footer alignment
+
+.column-footer-nav {
+    float: left;
+    padding-left: 15px;
+    width: 25%;
+    list-style-type: none;
+    text-align: center;
+}
+
+.column-footer-nav li {
+    font-size: 18px;
+}
+
+.column-media-icons {
+    float: left;
+    padding-top: 40px;
+    padding-left: 55px;
+    width: 32%;
+    justify-content: space-between;
+}
+
+.column-footer-logo {
+    float: right;
+    width: 30%;
+}
+
+//Custom Media Query - h1
+@media screen and (max-width: 449px) {
+
+    //--h1
+    h1.centered {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 450px) {
+
+    //--h1
+    h1.centered {
+        text-align: center;
+        transform: translate(-75%, -20%);
+    }
+
+}
+
+@media screen and (min-width: 910px) {
+
+    //--h1
+    h1.centered {
+        max-width: 600px;
+    }
+
+}
+//End of h1 custom medis query
+
+//CSS Footer placement for screens below 565px
+@media screen and (max-width: 565px) {
+
+    .column-footer-nav {
+        width: 100%;
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    .column-media-icons {
+        width: 100%;
+        padding: 0;
+    }
+
+    .column-footer-logo {
+        float: inherit;
+        width: 100%;
+    }
+
+    //CSS Logo in footer dimensions
+    #footer-logo {
+        width: auto;
+    }
+    
+}
+
+//Tablet Media Query -- Affects screen sizes 786px and above
+@media screen and (min-width: 768px) {
+
+
+    ul.meat-offerings {
+        font-size: 20px;
+    }
+
+    ul.veggie-offerings {
+        font-size: 20px;
+    }
+
+    ul.rice-offerings {
+        font-size: 20px;
+    }
+
+    ul.condiment-offerings {
+        font-size: 20px;
+    }
+
+}
+
+//Desktop Media Query -- Affects screen sizes 1025px and above
+@media screen and (min-width: 1025px) {}

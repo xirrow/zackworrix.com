@@ -1,0 +1,481 @@
+@import "palette.less";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  background: @greyLight;
+}
+
+.jumbotron {
+  padding: 2rem 1rem;
+  background-color: @greyLight;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: linear-gradient(
+      @DarkGrey,
+      transparent,
+      transparent,
+      transparent
+    ),
+    url("../img/hero-image.png");
+  height: 100vh;
+}
+
+//   Triangle Shape - Below Jumbotron and above Footer
+.jumbotron-triangle:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 35%;
+  width: 0%;
+  height: 0%;
+  border-top: solid 5vw @DarkGrey;
+  border-left: solid 15vw transparent;
+  border-right: solid 15vw transparent;
+  z-index: 1;
+}
+//   End of Triangle Shape
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: @DarkGrey;
+  opacity: 0.25;
+  z-index: 0;
+}
+
+.hero-text {
+  position: absolute;
+  color: @MainYellow;
+  text-align: right;
+  top: 50%;
+  left: 42%;
+  width: 55vw;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-shadow: 0 0 15px @DarkGrey, 0 0 15px @DarkGrey;
+  overflow-wrap: anywhere;
+}
+
+.hero-text h1 {
+  font-size: calc(30px + 2.5vw);
+}
+
+.hero-text h3 {
+  font-size: calc(10px + 2vw);
+}
+
+.hero-p p{
+  font-size: calc(8px + 1vw);
+  margin: 10px 0px 0px 0px;
+}
+
+.hero-p p:last-child{
+  margin-bottom: 10px;
+}
+
+.hero-text .btn {
+  margin-right: auto;
+}
+
+.btn {
+  background-color: @MainYellow;
+  color: @DarkGrey;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  display: inline-block;
+  line-height: 38px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: @DarkGrey;
+  color: @MainYellow;
+  width: 150px;
+  height: 40px;
+  border: @MainYellow solid 1px;
+  border-radius: 8px;
+  outline: none;
+}
+
+/*-- WORK SECTION --*/
+
+#work {
+  background-color: @greyLight;
+  margin-top: 50px;
+}
+
+.section-h1 {
+  text-align: center;
+  color: @DarkGrey;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.mega {
+  font-size: 36px;
+  padding: 40px 0px 40px 0px;
+}
+
+// OVERLAY FOR WORK SECTION
+
+.overlay-container {
+  position: relative;
+}
+
+.work-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: @DarkestGrey;
+}
+
+.overlay-container:hover .overlay {
+  opacity: 0.85;
+}
+
+.text {
+  color: @greyLighter;
+  font-size: calc(16px + (24 - 16) * ((50vw - 300px) / (1600 - 300)));
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+
+.text ul {
+  list-style: none;
+  text-align: left;
+}
+
+.text li {
+  margin: 10px 0px 0px 0px;
+}
+
+/*-- ABOUT SECTION --*/
+
+#about {
+  background-color: @greyLight;
+  color: @MainYellow;
+}
+
+.about-infoHead {
+  text-align: center;
+  color: @MainYellow;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+.text-container {
+  vertical-align: middle;
+  position: relative;
+  padding: 5%;
+  width: auto;
+  height: 100%;
+  border-radius: 35px;
+  box-shadow: 0px 0px 8px @DarkGrey;
+  background-color: @DarkGrey;
+}
+
+#about-education p {
+  padding: calc(8px + 0.8vw);
+  font-size: 2rem;
+}
+
+#about-education li {
+  padding: 20px;
+  font-size: calc(16px + 1vw);
+}
+
+.about-scripts {
+  font-size: calc(12px + 0.8vw);
+  padding-top: 5%;
+}
+
+.about-scripts li {
+  list-style: none;
+}
+
+#about-skills-p {
+  text-align: center;
+}
+
+#icon-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  text-align: center;
+  grid-row-gap: 40px;
+  margin-top: 40px;
+}
+
+/*-- CONTACT SECTION --*/
+
+#contact {
+  background-color: @greyLight;
+}
+
+#contact-form {
+  color: @MainYellow;
+  display: block;
+  text-align: center;
+}
+
+#contact-form p {
+  padding-bottom: 50px;
+}
+
+#contact-form div {
+  padding: 15px;
+  justify-content: space-between;
+}
+
+#contact-form div input {
+  background-color: @LightGrey;
+  border: @MainYellow 1px solid;
+  display: inline-block;
+  width: 200px;
+}
+
+#contact-form div input:focus {
+  background-color: @MainYellow;
+  color: @DarkestGrey;
+}
+
+#contact-form div label {
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+}
+
+#contact-form div textarea {
+  font-family: "Muli", sans-serif;
+  background-color: @LightGrey;
+  border: @MainYellow 1px solid;
+  vertical-align: top;
+  height: 110px;
+  width: 200px;
+  display: inline-block;
+}
+
+#contact-form div textarea:focus {
+  background-color: @MainYellow;
+  color: #232323;
+}
+
+#contact-form input,
+textarea {
+  color: @MainYellow;
+}
+
+::placeholder {
+  color: @MainYellow;
+  font-size: 12px;
+  text-align: right;
+  text-transform: uppercase;
+  padding-right: 5px;
+}
+
+#contact-form .btn {
+  margin-top: 50px;
+}
+
+#form-container {
+  vertical-align: middle;
+  position: relative;
+  left: 10%;
+  margin-bottom: 100px;
+  padding: 5%;
+  width: 80%;
+  border-radius: 35px;
+  box-shadow: 0px 0px 8px @DarkGrey;
+  background-color: @DarkGrey;
+}
+
+.alert {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 35px;
+  text-align: center;
+}
+
+.alert-success {
+  color: #3c571e;
+  background-color: #e3eed7;
+  border-color: #d8e7c8;
+}
+
+.alert-danger {
+  color: #670f12;
+  background-color: #f4d2d3;
+  border-color: #efbfc1;
+}
+
+.copyright {
+  clear: both;
+  align-content: center;
+  color: @greyLight;
+  line-height: 20px;
+  font-size: 0.8em;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.copyright a {
+  color: @greyLight;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: @MainYellow;
+}
+/*-- FOOTER SECTION --*/
+
+#footer {
+  height: 300px;
+  background-color: @DarkestGrey;
+  position: relative;
+  padding: 2rem 1rem;
+}
+
+#footer:before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 35%;
+  width: 0%;
+  height: 0%;
+  border-bottom: solid 5vw @DarkestGrey;
+  border-left: solid 15vw transparent;
+  border-right: solid 15vw transparent;
+}
+
+#footer-links {
+  display: flex;
+  float: left;
+  justify-content: space-around;
+  margin-right: 0px;
+  text-align: left;
+  flex: 50%;
+  max-width: 50%;
+}
+
+#footer-links li {
+  list-style: none;
+  margin: 20px 75px 0px 0px;
+  border-left: 20px solid transparent;
+  transition: 0.3s;
+}
+
+#footer-links li:hover {
+  border-left: 20px solid @MainYellow;
+}
+
+#footer-links a {
+  color: @MainYellow;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+
+#social-links {
+  float: right;
+  justify-content: space-around;
+  flex: 50%;
+  max-width: 50%;
+}
+
+#social-links li {
+  display: inline-block;
+  list-style: none;
+}
+
+#social-links a {
+  text-decoration: none;
+}
+
+#social-links i {
+  display: inline;
+  padding: 10px;
+  color: @MainYellow;
+  font-size: 10vw;
+}
+
+#social-links i:hover {
+  color: @greyLight;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: @MainYellow;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#footer-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  padding: 0 2px;
+}
+
+/* This changes icon orientation in About - Skills area */
+
+@media screen and (max-width: 900px) {
+  #icon-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #social-links {
+    float: right;
+    justify-content: space-around;
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  #social-links .fab {
+    font-size: 15vw;
+  }
+}

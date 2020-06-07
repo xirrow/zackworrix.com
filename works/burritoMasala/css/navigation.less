@@ -1,0 +1,156 @@
+@import 'palette.less';
+
+// CSS for fixed header - Follows visitor when scrolling
+
+.header {
+  background-color: @color6;
+  box-shadow: 1px 1px 4px 0 @color4;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: @color6;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: @color4;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  color: @color2;
+  background-color: @color4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.header img {
+  background-color: @color6;
+  height: 75px;
+}
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+}
+
+//Menu icon CSS
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: @color4;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: @color4;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+//Menu button and menu button transformation when clicked
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 500px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+// Media query for screen sizes of 780px and above
+
+@media screen and (min-width: 780px) {
+  .header li {
+    float: left;
+  }
+  
+  .header li a {
+    height: 50px;
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: @color4;
+  }
+  
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  
+  .header .menu-icon {
+    display: none;
+  }
+    
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: @color6;
+    border: 0;
+  }
+
+}

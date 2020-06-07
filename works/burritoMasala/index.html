@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Burrito Masala</title>
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/navigation.css" />
+  <link rel="stylesheet" type="text/css" href="css/grid-spec.css" />
+
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="//fonts.googleapis.com/css?family=Droid+Sans"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="//fonts.googleapis.com/css?family=Droid+Serif"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
+  <body>
+    <!--Header - Navigation-->
+    <header class="header">
+      <a href="index.html" class="logo"
+        ><img
+          src="images/burrito-masala-logo.png"
+          alt="Burrito Masala food truck quick logo"
+      /></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#offerings">Offerings</a></li>
+        <li><a href="index.html#location1">Hours &amp; Location</a></li>
+        <li><a href="index.html#location2">Place Order</a></li>
+        <li><a href="index.html#footer">Social Media</a></li>
+      </ul>
+    </header>
+    <!--End Header-Navigation-->
+
+    <img
+      src="images/food-truck.png"
+      class="food-truck"
+      alt="Burrito Masala Indian Mexican fusion restaurant"
+    />
+
+    <h1 class="centered">INDIAN / MEXICAN FUSION FOOD CART</h1>
+
+    <main>
+      <h2 class="about-us"><a id="about" class="anchor"></a>About Us</h2>
+
+      <p>
+        Burrito Masala, a food cart located in downtown Portland, OR that
+        specializes in delicious southern Indian (Kerala) and Mexican foods
+        stuffed in a flour tortilla!
+      </p>
+
+      <p>
+        Diners can choose a gluten free option by ordering one of our bowls.
+      </p>
+
+      <p>
+        Burrito Masala is run by a husband and wife team, James Beard
+        award-winning chefs <em>Prasad Varma &amp; Ramona Varma-Hernandez.</em>
+      </p>
+
+      <p>
+        Additionally, our burritos are <b>H U G E.</b>
+        <br />
+        It’s possible some people will not be able to finish one of our
+        delicious burritos in one sitting.
+      </p>
+      <br />
+
+      <h2 id="order-place">Placing an Order</h2>
+
+      <p>
+        Before taking a look at our offerings, we suggest you take a moment to
+        grab a writing implement and some thing to write on.
+      </p>
+
+      <p>
+        As you scroll down through our Offerings, it will be important to take
+        note of your prefered meat, veggies, rices, and condiments.
+      </p>
+
+      <p>
+        When you reach the "Place Your Order" section you'll be ready with all
+        the information you'll need to get exactly the burrito or bowl you want
+        by calling or texting Burrito Masala.
+      </p>
+
+      <h6>
+        Already know what you want? Call or Text us at
+        <a href="tel:503-555-5555">503-555-5555</a>
+      </h6>
+
+      <h2 class="offerings"><a id="offerings" class="anchor"></a>Offerings</h2>
+
+      <figure class="container">
+        <h2 class="food-text">Meats</h2>
+        <img
+          src="images/meats.png"
+          class="masala-meats"
+          alt="Meat Cart Foods"
+        />
+        <ul class="meat-offerings">
+          <li>Chicken Tikka Masala</li>
+          <li>Lamb Curry</li>
+          <li>Pork in Salsa Verde</li>
+        </ul>
+      </figure>
+
+      <figure class="container">
+        <h2 class="food-text">Veggies</h2>
+        <img
+          src="images/veggies.png"
+          class="masala-veggies"
+          alt="Vegetable dishes"
+        />
+        <ul class="veggie-offerings">
+          <li>Sambar (lentil curry)</li>
+          <li>Aloo Gobi Masala (Potato &amp; Cauliflower)</li>
+          <li>Chile relleno</li>
+        </ul>
+      </figure>
+
+      <figure class="container">
+        <h2 class="food-text">Rices</h2>
+        <img src="images/rices.png" class="masala-rices" alt="Rice options" />
+        <ul class="rice-offerings">
+          <li>Kerala Biryani</li>
+          <li>Spanish Rice</li>
+          <li>White or Brown Rice (Khaima)</li>
+        </ul>
+      </figure>
+
+      <figure class="container">
+        <h2 class="food-text">Condiments</h2>
+        <img
+          src="images/condiments.png"
+          class="masala-condiments"
+          alt="Cultural condiments variety"
+        />
+        <ul class="condiment-offerings">
+          <li>Mango Chutney</li>
+          <li>Tomatillo Salsa</li>
+          <li>Raita (Cucumber Yogurt Sauce)</li>
+          <li>Grandma Elena’s Fiery Red Salsa (Made with Ghost Peppers)🌶️</li>
+          <li>Cheese</li>
+          <li>Sour cream</li>
+          <li>Onions</li>
+          <li>Tomatoes</li>
+          <li>Cucumbers</li>
+          <li>Cilantro</li>
+          <li>Guacamole ($.75 extra!)</li>
+        </ul>
+      </figure>
+      <br />
+
+      <h2 class="location">
+        <a id="location1" class="anchor"></a>Hours &amp; Location
+      </h2>
+
+      <figure class="gmap_canvas">
+        <iframe
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=sw%203rd%20and%20alder&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        >
+        </iframe>
+      </figure>
+
+      <h4>Located near the corner of SW 3rd and Alder, Portland, OR</h4>
+
+      <h4>Open 7 days a week, 11:00 AM to 7:00 PM</h4>
+
+      <h1 class="place-order">
+        <a id="location2" class="anchor"></a>Place Your Order
+      </h1>
+      <h2 id="tel-num"><a href="tel:503-555-5555">503-555-5555</a></h2>
+      <section class="phone-only">
+        <h3>Only phone orders are currently accepted.</h3>
+        <p>Please call or text.</p>
+        <br />
+      </section>
+    </main>
+
+    <footer class="col span_12_of_12">
+      <a id="footer" class="anchor"></a>
+
+      <ul class="column-footer-nav footer-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#offerings">Offerings</a></li>
+        <li><a href="index.html#location1">Hours &amp; Location</a></li>
+        <li><a href="index.html#location2">Place Order</a></li>
+        <li><a href="index.html#footer">Social Media</a></li>
+      </ul>
+
+      <figure class="column-media-icons media-icons">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-yelp"></a>
+        <a href="#" class="fa fa-pinterest"></a>
+        <a href="#" class="fa fa-twitter"></a>
+      </figure>
+
+      <p class="column-footer-logo">
+        <a href="index.html">
+          <img
+            id="footer-logo"
+            src="images/burrito-masala-logo.png"
+            alt="Footer logo for Burrito Masala"
+          />
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2019 Burrito Masala<br />
+        <a href="mailto:hello@burritomasala.com">hello@burritomasala.com</a>
+      </p>
+    </footer>
+  </body>
+</html>

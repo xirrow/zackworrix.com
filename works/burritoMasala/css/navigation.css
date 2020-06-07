@@ -1,0 +1,121 @@
+.header {
+  background-color: #8c8b48;
+  box-shadow: 1px 1px 4px 0 #22090d;
+  width: 100%;
+  z-index: 3;
+}
+.header ul {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #8c8b48;
+}
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #22090d;
+}
+.header li a:hover,
+.header .menu-btn:hover {
+  color: #d6b87c;
+  background-color: #22090d;
+}
+.header .logo {
+  display: block;
+  float: left;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.header img {
+  background-color: #8c8b48;
+  height: 75px;
+}
+/* menu */
+.header .menu {
+  clear: both;
+  max-height: 0;
+}
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px;
+  position: relative;
+  user-select: none;
+}
+.header .menu-icon .navicon {
+  background: #22090d;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #22090d;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+.header .menu-btn {
+  display: none;
+}
+.header .menu-btn:checked ~ .menu {
+  max-height: 500px;
+}
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+@media screen and (min-width: 780px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    height: 50px;
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #22090d;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #8c8b48;
+    border: 0;
+  }
+}

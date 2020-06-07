@@ -1,0 +1,322 @@
+@import 'palette.less';
+
+html {}
+
+body {
+  margin: 0px;
+  background-color: @color1;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+footer {
+  background-color: @color3;
+}
+
+.article-space {
+  padding: 25px;
+}
+
+/*Social Media*/
+
+.twitter-timeline {
+  height: 300px;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 60%;
+  position: relative;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 400px;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+/*Footer Area*/
+
+#footer-logo {
+  width: 100%;
+}
+
+/*Footer Columns*/
+
+.left {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.centered {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+}
+
+.right {
+  width: 100%;
+}
+
+.copyright {
+  clear: both;
+  align-content: center;
+  color: @color1;
+  line-height: 20px;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 0;
+}
+
+i.fa-twitter{
+  color: @color2;
+  font-size: 55px;
+  padding-left:35px;
+}
+
+i.fa-facebook-official {
+  color: @color2;
+  font-size: 55px;
+}
+
+/*Footer Navigation*/
+
+.footer-nav {
+  background-color: @color3;
+  margin: 0;
+}
+
+.footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  float: left;
+}
+
+.footer-nav li a {
+  display: block;
+  color: @color1;
+  text-align: center;
+  padding: 10px 0px 0px 10px;
+  text-decoration: none;
+}
+
+.footer-nav li a:hover {
+  color: @color2;
+}
+
+/* Widget Area */
+
+.widget-space {
+  border: 2px solid;
+  padding: 20px 0 20px 0;
+}
+/*Navigation------------------------------------------------------------------*/
+
+#nav-logo {
+  background: @color3;
+  float: left;
+  height: 55px;
+  padding-left: 12px;
+}
+
+nav.container {
+  width: 100%;
+}
+
+/* Remove margins and padding from the list, and add a black background color */
+
+ul.topnav {
+  list-style-type: none;
+  overflow: auto;
+  background-color: @color3;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Float the list items side by side */
+
+ul.topnav li {
+  float: right;
+}
+
+/* Style the links inside the list items */
+
+ul.topnav li a {
+  display: inline-block;
+  color: @color1;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+/* Change background color of links on hover */
+
+ul.topnav li a:hover {
+  background-color: @color2;
+  color: @color3;
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+
+ul.topnav li.icon {
+  display: none;
+}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+
+@media (max-width: 610px) {
+
+ul.topnav li {
+  display: none;
+}
+
+ul.topnav li.icon {
+  float: right;
+  display: inline-block;
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+
+ul.topnav.responsive {
+  position: relative;
+  padding: 0px;
+}
+
+ul.topnav.responsive li.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+ul.topnav.responsive li {
+  float: none;
+  display: block;
+  clear: both;
+}
+
+ul.topnav.responsive li a {
+  display: block;
+  text-align: left;
+}
+
+.container {
+  width: 100%;
+}
+
+}
+
+/* Slideshow Hide */
+
+.slideshow-container {
+  display: none;
+}
+
+#mobile-img {
+  width: 100%;
+}
+/*
+
+TABLET STYLESHEET---------------------------------------------------------
+
+The following CSS affects all screen sizes larger than 480 pixels wide.
+
+*/
+
+@media only screen and (min-width: 610px) {
+
+#mobile-img {
+  display: none;        
+}    
+
+.slideshow-container {
+  display: contents;
+}
+
+#footer-logo {
+  float: right;
+} 
+
+.footer-nav {
+  margin-top: 20px;
+}
+    
+/*Navigation*/
+    
+.topnav-right {
+  float: right;
+}
+    
+ul.topnav li {
+  float: left;
+}
+    
+/*Footer Columns*/
+
+.left {
+  width: 25%;
+  float: left;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.centered {
+  width: 15%;
+  display: inline-block;
+  text-align: center;
+}
+
+.right {
+  width: 50%;
+  float: right;
+  margin-right: 15px;
+}
+
+.copyright {
+  clear: both;
+  align-content: center;
+  color: @color1;
+  line-height: 20px;
+  font-size: 1em;
+  text-align: center;
+}
+    
+.footer-nav ul {
+  list-style-type: none;
+  margin-left: 50px;
+  padding: 0;
+  overflow: hidden;
+  float: left;
+}
+    
+i.fa-twitter{
+  color: @color2;
+  font-size: 55px;
+}
+
+.widget-space {
+  border: 2px solid;
+  padding: 20px;  
+}
+    
+}
+    
+/*
+
+DESKTOP STYLESHEET
+
+The following CSS affects all screen sizes larger than 1024 pixels wide.
+
+*/
+
+@media only screen and (min-width: 1025px) {}
