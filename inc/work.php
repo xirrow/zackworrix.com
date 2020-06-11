@@ -43,7 +43,7 @@
             </div>
             </a>
         </div>
-        <div class="flex-work-div flex-div overlay-container">
+        <!-- <div class="flex-work-div flex-div overlay-container">
             <img src="https://via.placeholder.com/300x200?" alt="Image" class="work-image">
             <div class="overlay">
                 <div class="text">COMING SOON!</div>
@@ -62,6 +62,6 @@
             <div class="overlay">
                 <div class="text">COMING SOON!</div>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>

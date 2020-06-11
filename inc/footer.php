@@ -10,10 +10,10 @@
         </div>
         <div id="social-links">
             <ul>
-                <li><a href="https://github.com/xirrow"><i class="fab fa-github-square"></i></a></li>
-                <li><a href="instagram.com/glasseslives"><i class="fab fa-instagram-square"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/zackworrix/"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://twitter.com/ZackWorrix"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="https://github.com/xirrow" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                <li><a href="instagram.com/glasseslives" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/zackworrix/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/ZackWorrix" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
             </ul>
         </div>
     </div>

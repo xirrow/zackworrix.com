@@ -3,7 +3,7 @@
     <h1 class="section-h1 mega">about</h1>
     <!-- Flex begins -->
     <div class="flex-container box">
-        <div class="flex-about-div flex-div box">
+        <div class="flex-about-div flex-div box img-container">
             <img src="/img/oatPic.png" alt="Otis Boston Terrier Beard Man Bio">
         </div>
         <div class="flex-about-div flex-div box">
@@ -23,7 +23,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex-about-div flex-div box">
+        <div class="flex-about-div flex-div box img-container">
             <img src="/img/pccCascade.png" alt="Education PCC Portland Community College Cascade">
         </div>
         <div class="flex-about-div flex-div box">
@@ -41,16 +41,16 @@
             </div>
         </div>
 
-        <div class="flex-about-div flex-div box">
+        <div class="flex-about-div flex-div box img-container">
             <img src="/img/contact.png" alt="Contact form code php">
         </div>
         <div class="flex-about-div flex-div box">
             <div class="text-container">
                 <h3 class="about-infoHead">skills</h3>
                 <div class="about-scripts">
-                    <p id="about-skills-p"><strong>I have recieved instruction and continue to train and study with a
+                    <p id="about-skills-p">I have recieved instruction and continue to train and study with a
                             focus on the following
-                            skills:</strong></p><br>
+                            skills:</p><br>
                     <div id="icon-wrapper">
                         <div>
                             <i class="fab fa-html5 fa-4x"></i>
