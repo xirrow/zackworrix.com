@@ -1,8 +1,8 @@
 <section id="about">
     <a id="about-link"></a>
-    <h1 class="section-h1 mega">about</h1>
+    <h1 class="section-h1 mega" id="about-margin>about</h1>
     <!-- Flex begins -->
-    <div class="flex-container box">
+    <div class=" flex-container box">
         <div class="flex-about-div flex-div box img-container">
             <img src="/img/oatPic.png" alt="Otis Boston Terrier Beard Man Bio">
         </div>
@@ -49,8 +49,8 @@
                 <h3 class="about-infoHead">skills</h3>
                 <div class="about-scripts">
                     <p id="about-skills-p">I have recieved instruction and continue to train and study with a
-                            focus on the following
-                            skills:</p><br>
+                        focus on the following
+                        skills:</p><br>
                     <div id="icon-wrapper">
                         <div>
                             <i class="fab fa-html5 fa-4x"></i>
@@ -80,6 +80,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Flex ends -->
+        </div>
+        <!-- Flex ends -->
 </section>

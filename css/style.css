@@ -5,12 +5,11 @@
 }
 body {
   font-family: "Muli", sans-serif;
-  background: #bfbfbf;
+  background: #504C52;
   font-weight: 400;
 }
 .jumbotron {
   padding: 2rem 1rem;
-  background-color: #bfbfbf;
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -100,12 +99,11 @@ body {
 }
 /*-- WORK SECTION --*/
 #work {
-  background-color: #bfbfbf;
   margin-top: 50px;
 }
 .section-h1 {
   text-align: center;
-  color: #282828;
+  color: rgba(255, 255, 0, 0.85);
   letter-spacing: 5px;
   text-transform: uppercase;
 }
@@ -157,8 +155,10 @@ body {
 }
 /*-- ABOUT SECTION --*/
 #about {
-  background-color: #bfbfbf;
   color: rgba(255, 255, 0, 0.85);
+}
+#about-margin {
+  margin-top: -40px;
 }
 .img-container {
   display: flex;
@@ -212,9 +212,6 @@ body {
   margin: 5px 0px 40px 0px;
 }
 /*-- CONTACT SECTION --*/
-#contact {
-  background-color: #bfbfbf;
-}
 #contact-form {
   color: rgba(255, 255, 0, 0.85);
   display: block;
@@ -283,9 +280,10 @@ textarea {
 .alert {
   position: relative;
   padding: 10px;
+  margin-top: -1rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
-  border-radius: 35px;
+  border-radius: 15px;
   text-align: center;
 }
 .alert-success {
