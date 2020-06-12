@@ -3,7 +3,7 @@
 
 <section id = 'contact'>
 <a id = 'contact-link'></a>
-<h1 class = 'section-h1 mega'>contact</h1>
+<h1 class = 'section-h1 mega'>Message Zack</h1>
 <div id = 'form-container'>
 <?php if ( $msg != '' ): ?>
 <div class = "alert <?php echo $msgClass; ?>"><?php echo $msg;
@@ -34,7 +34,7 @@ echo ''.$location.'#contact';?>" method = 'POST'>
 <textarea name = 'userMessage' id = 'userMessage' cols = '30' rows = '10' placeholder="Required"><?php echo isset( $_POST['userMessage'] ) ? $message : '';
 ?></textarea>
 </div>
-<button class = 'btn' type = 'submit' name = 'submit'>Send Message</button>
+<button class = 'btn' type = 'submit' name = 'submit'>Send Your Message</button>
 </form>
 </div>
 </section>

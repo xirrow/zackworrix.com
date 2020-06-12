@@ -1,6 +1,6 @@
 <section id="about">
     <a id="about-link"></a>
-    <h1 class="section-h1 mega" id="about-margin>about</h1>
+    <h1 class="section-h1 mega" id="about-margin">about zack</h1>
     <!-- Flex begins -->
     <div class=" flex-container box">
         <div class="flex-about-div flex-div box img-container">

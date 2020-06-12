@@ -1,7 +1,7 @@
 <section id="work">
     <a id="work-link"></a>
     <!--Flex-->
-    <h1 class="section-h1 mega">work</h1>
+    <h1 class="section-h1 mega">zack's work</h1>
     <div class="flex-container">
         <div class="flex-work-div flex-div overlay-container">
             <a href="works/ACE" target="_blank"><img src="img/ACEMultisport.png" alt="Image" class="work-image">
@@ -38,7 +38,7 @@
                         <li><strong>NAME:</strong> CROM FITNESS</li>
                         <li><strong>DEVELOPED:</strong> Winter 2019</li>
                         <li><strong>TECH USED:</strong> HTML5, CSS3, GNU Image Manipulation Program, Logo Creation</li>
-                        <li><strong>CHALLENGES:</strong> This site was truly straigh forward in it's development. I remember trying some new techniques from the gradient background and image manipulation to the hecagonal bullet points next to individual weight amounts.</li>
+                        <li><strong>CHALLENGES:</strong> This site was truly straigh forward in it's development. I remember trying some new techniques from the gradient background and image manipulation to the hexagonal bullet points next to individual weight amounts.</li>
                     </ul></div>
             </div>
             </a>

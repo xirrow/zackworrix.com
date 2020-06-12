@@ -2,10 +2,10 @@
     <div id="footer-wrapper">
         <div id="footer-links">
             <ul>
-                <li><a href="">home</a></li>
-                <li><a href="">work</a></li>
-                <li><a href="">about</a></li>
-                <li><a href="">contact</a></li>
+                <li><a href="#home-link">home</a></li>
+                <li><a href="#work-link">work</a></li>
+                <li><a href="#about-link">about</a></li>
+                <li><a href="#contact-link">contact</a></li>
             </ul>
         </div>
         <div id="social-links">

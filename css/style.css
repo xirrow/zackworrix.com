@@ -27,7 +27,8 @@ body {
   border-top: solid 5vw #282828;
   border-left: solid 15vw transparent;
   border-right: solid 15vw transparent;
-  z-index: 1;
+  z-index: -1;
+  margin: -1px;
 }
 .overlay {
   position: absolute;
@@ -70,6 +71,9 @@ body {
 }
 .hero-text a {
   text-shadow: none;
+}
+#contact-form .btn {
+  width: 200px;
 }
 .btn {
   background-color: rgba(255, 255, 0, 0.85);
@@ -158,7 +162,7 @@ body {
   color: rgba(255, 255, 0, 0.85);
 }
 #about-margin {
-  margin-top: -40px;
+  margin-bottom: -30px;
 }
 .img-container {
   display: flex;
@@ -329,6 +333,7 @@ textarea {
   border-bottom: solid 5vw #232323;
   border-left: solid 15vw transparent;
   border-right: solid 15vw transparent;
+  margin: -1px;
 }
 #footer-links {
   display: flex;
