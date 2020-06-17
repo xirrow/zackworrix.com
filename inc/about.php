@@ -4,7 +4,7 @@
     <!-- Flex begins -->
     <div class=" flex-container box">
         <div class="flex-about-div flex-div box img-container">
-            <img src="/img/oatPic.png" alt="Otis Boston Terrier Beard Man Bio">
+            <img src="img/oatPic.png" alt="Otis Boston Terrier Beard Man Bio">
         </div>
         <div class="flex-about-div flex-div box">
             <div class="text-container">
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="flex-about-div flex-div box img-container">
-            <img src="/img/pccCascade.png" alt="Education PCC Portland Community College Cascade">
+            <img src="img/pccCascade.png" alt="Education PCC Portland Community College Cascade">
         </div>
         <div class="flex-about-div flex-div box">
 
@@ -42,7 +42,7 @@
         </div>
 
         <div class="flex-about-div flex-div box img-container">
-            <img src="/img/contact.png" alt="Contact form code php">
+            <img src="img/contact.png" alt="Contact form code php">
         </div>
         <div class="flex-about-div flex-div box">
             <div class="text-container">
