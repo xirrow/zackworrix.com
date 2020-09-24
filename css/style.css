@@ -43,7 +43,7 @@ body {
 }
 .hero-text {
   position: absolute;
-  color: rgba(255, 255, 0, 0.85);
+  color: rgba(78, 253, 84);
   text-align: right;
   top: 50%;
   left: 42%;
@@ -72,12 +72,9 @@ body {
 .hero-text a {
   text-shadow: none;
 }
-#contact-form .btn {
-  width: 200px;
-}
 .btn {
-  background-color: rgba(255, 255, 0, 0.85);
-  color: #282828;
+  background-color: rgba(78, 253, 84);
+  color: rgba(40, 40, 40);
   width: 150px;
   height: 40px;
   border: solid 1px transparent;
@@ -94,10 +91,10 @@ body {
 }
 .btn:hover {
   background-color: #282828;
-  color: rgba(255, 255, 0, 0.85);
+  color: rgba(78, 253, 84);
   width: 150px;
   height: 40px;
-  border: rgba(255, 255, 0, 0.85) solid 1px;
+  border: rgba(78, 253, 84) solid 1px;
   border-radius: 8px;
   outline: none;
 }
@@ -107,7 +104,7 @@ body {
 }
 .section-h1 {
   text-align: center;
-  color: rgba(255, 255, 0, 0.85);
+  color: rgba(78, 253, 84);
   letter-spacing: 5px;
   text-transform: uppercase;
 }
@@ -159,7 +156,7 @@ body {
 }
 /*-- ABOUT SECTION --*/
 #about {
-  color: rgba(255, 255, 0, 0.85);
+  color: rgba(78, 253, 84);
 }
 #about-margin {
   margin-bottom: -30px;
@@ -174,7 +171,7 @@ body {
 }
 .about-infoHead {
   text-align: center;
-  color: rgba(255, 255, 0, 0.85);
+  color: rgba(78, 253, 84);
   letter-spacing: 5px;
   text-transform: uppercase;
   font-size: 28px;
@@ -216,8 +213,11 @@ body {
   margin: 5px 0px 40px 0px;
 }
 /*-- CONTACT SECTION --*/
+input[type="text"]#honeyclaws {
+  display: none;
+}
 #contact-form {
-  color: rgba(255, 255, 0, 0.85);
+  color: rgba(78, 253, 84);
   display: block;
   text-align: center;
 }
@@ -230,38 +230,39 @@ body {
 }
 #contact-form div input {
   background-color: #504C52;
-  border: rgba(255, 255, 0, 0.85) 1px solid;
+  border: rgba(78, 253, 84) 1px solid;
   display: inline-block;
-  width: 200px;
+  width: 100%;
 }
 #contact-form div input:focus {
-  background-color: rgba(255, 255, 0, 0.85);
+  background-color: rgba(78, 253, 84);
   color: #232323;
 }
 #contact-form div label {
   display: inline-block;
-  width: 200px;
-  text-align: right;
+  width: 100%;
+  text-align: left;
+  float: left;
 }
 #contact-form div textarea {
   font-family: "Muli", sans-serif;
   background-color: #504C52;
-  border: rgba(255, 255, 0, 0.85) 1px solid;
+  border: rgba(78, 253, 84) 1px solid;
   vertical-align: top;
   height: 110px;
-  width: 200px;
+  width: 100%;
   display: inline-block;
 }
 #contact-form div textarea:focus {
-  background-color: rgba(255, 255, 0, 0.85);
+  background-color: rgba(78, 253, 84);
   color: #232323;
 }
 #contact-form input,
 textarea {
-  color: rgba(255, 255, 0, 0.85);
+  color: rgba(78, 253, 84);
 }
 ::placeholder {
-  color: rgba(255, 255, 0, 0.85);
+  color: rgba(78, 253, 84);
   font-size: 12px;
   text-align: right;
   text-transform: uppercase;
@@ -269,6 +270,9 @@ textarea {
 }
 #contact-form .btn {
   margin-top: 50px;
+  height: auto;
+  width: 100%;
+  max-width: 200px;
 }
 #form-container {
   vertical-align: middle;
@@ -314,7 +318,7 @@ textarea {
   text-decoration: none;
 }
 .copyright a:hover {
-  color: rgba(255, 255, 0, 0.85);
+  color: rgba(78, 253, 84);
 }
 /*-- FOOTER SECTION --*/
 #footer {
@@ -351,10 +355,10 @@ textarea {
   transition: 0.3s;
 }
 #footer-links li:hover {
-  border-left: 20px solid rgba(255, 255, 0, 0.85);
+  border-left: 20px solid rgba(78, 253, 84);
 }
 #footer-links a {
-  color: rgba(255, 255, 0, 0.85);
+  color: rgba(78, 253, 84);
   font-weight: bold;
   font-size: 15px;
   letter-spacing: 3px;
@@ -378,13 +382,13 @@ textarea {
 #social-links i {
   display: inline;
   padding: 10px;
-  color: rgba(255, 255, 0, 0.85);
+  color: rgba(78, 253, 84);
   font-size: 10vw;
 }
 #social-links i:hover {
-  color: #bfbfbf;
+  color: #282828;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgba(255, 255, 0, 0.85);
+  -webkit-text-stroke-color: rgba(78, 253, 84);
   cursor: pointer;
   transition: 0.3s;
 }
@@ -404,6 +408,17 @@ textarea {
   }
 }
 @media screen and (max-width: 720px) {
+  #form-container {
+    vertical-align: middle;
+    position: relative;
+    left: 13%;
+    margin-bottom: 100px;
+    padding: 5%;
+    width: 75%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px #282828;
+    background-color: #282828;
+  }
   #social-links {
     float: right;
     justify-content: space-around;

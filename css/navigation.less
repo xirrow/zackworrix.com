@@ -1,7 +1,7 @@
 @import 'palette.less';
 
 .logo h4 a {
-  color: @MainYellow;
+  color: @MainGreen;
   font-weight: bold;
   font-size: 28px;
   letter-spacing: -2px;
@@ -23,6 +23,12 @@ nav {
   z-index: 2;
 }
 
+nav img {
+  height: 50px;
+  width: auto;
+  margin: 5px 0 -1px 0;
+}
+
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -37,11 +43,11 @@ nav {
 }
 
 .nav-links li:hover {
-  border-left: 20px solid @MainYellow;
+  border-left: 20px solid @MainGreen;
 }
 
 .nav-links a {
-  color: @MainYellow;
+  color: @MainGreen;
   font-weight: bold;
   font-size: 15px;
   letter-spacing: 3px;
@@ -60,7 +66,7 @@ nav {
 .qian div {
   width: 25px;
   height: 3px;
-  background-color: @MainYellow;
+  background-color: @MainGreen;
   margin: 5px;
   transition: all 0.2s ease;
 }
@@ -103,6 +109,7 @@ nav {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0px);

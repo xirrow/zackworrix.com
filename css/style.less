@@ -18,12 +18,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: linear-gradient(
-      @DarkGrey,
+  background-image: linear-gradient(@DarkGrey,
       transparent,
       transparent,
-      transparent
-    ),
+      transparent),
     url("../img/hero-image.png");
   height: 100vh;
 }
@@ -42,6 +40,7 @@ body {
   z-index: -1;
   margin: -1px;
 }
+
 //   End of Triangle Shape
 
 .overlay {
@@ -58,7 +57,7 @@ body {
 
 .hero-text {
   position: absolute;
-  color: @MainYellow;
+  color: @MainGreen;
   text-align: right;
   top: 50%;
   left: 42%;
@@ -93,12 +92,10 @@ body {
 .hero-text a {
   text-shadow: none;
 }
-#contact-form .btn {
-  width: 200px;
-}
+
 .btn {
-  background-color: @MainYellow;
-  color: @DarkGrey;
+  background-color: @MainGreen;
+  color: rgba(40, 40, 40);
   width: 150px;
   height: 40px;
   border: solid 1px transparent;
@@ -114,12 +111,13 @@ body {
   transition: 0.3s;
 }
 
+
 .btn:hover {
   background-color: @DarkGrey;
-  color: @MainYellow;
+  color: @MainGreen;
   width: 150px;
   height: 40px;
-  border: @MainYellow solid 1px;
+  border: @MainGreen solid 1px;
   border-radius: 8px;
   outline: none;
 }
@@ -132,7 +130,7 @@ body {
 
 .section-h1 {
   text-align: center;
-  color: @MainYellow;
+  color: @MainGreen;
   letter-spacing: 5px;
   text-transform: uppercase;
 }
@@ -196,7 +194,7 @@ body {
 /*-- ABOUT SECTION --*/
 
 #about {
-  color: @MainYellow;
+  color: @MainGreen;
 }
 
 #about-margin {
@@ -215,7 +213,7 @@ body {
 
 .about-infoHead {
   text-align: center;
-  color: @MainYellow;
+  color: @MainGreen;
   letter-spacing: 5px;
   text-transform: uppercase;
   font-size: 28px;
@@ -266,11 +264,12 @@ body {
 
 /*-- CONTACT SECTION --*/
 
-#contact {
+input[type="text"]#honeyclaws {
+  display: none;
 }
 
 #contact-form {
-  color: @MainYellow;
+  color: @MainGreen;
   display: block;
   text-align: center;
 }
@@ -286,44 +285,45 @@ body {
 
 #contact-form div input {
   background-color: @DarkerBackground;
-  border: @MainYellow 1px solid;
+  border: @MainGreen 1px solid;
   display: inline-block;
-  width: 200px;
+  width: 100%;
 }
 
 #contact-form div input:focus {
-  background-color: @MainYellow;
+  background-color: @MainGreen;
   color: @DarkestGrey;
 }
 
 #contact-form div label {
   display: inline-block;
-  width: 200px;
-  text-align: right;
+  width: 100%;
+  text-align: left;
+  float: left;
 }
 
 #contact-form div textarea {
   font-family: "Muli", sans-serif;
   background-color: @DarkerBackground;
-  border: @MainYellow 1px solid;
+  border: @MainGreen 1px solid;
   vertical-align: top;
   height: 110px;
-  width: 200px;
+  width: 100%;
   display: inline-block;
 }
 
 #contact-form div textarea:focus {
-  background-color: @MainYellow;
+  background-color: @MainGreen;
   color: #232323;
 }
 
 #contact-form input,
 textarea {
-  color: @MainYellow;
+  color: @MainGreen;
 }
 
 ::placeholder {
-  color: @MainYellow;
+  color: @MainGreen;
   font-size: 12px;
   text-align: right;
   text-transform: uppercase;
@@ -332,6 +332,9 @@ textarea {
 
 #contact-form .btn {
   margin-top: 50px;
+  height: auto;
+  width: 100%;
+  max-width: 200px;
 }
 
 #form-container {
@@ -384,8 +387,9 @@ textarea {
 }
 
 .copyright a:hover {
-  color: @MainYellow;
+  color: @MainGreen;
 }
+
 /*-- FOOTER SECTION --*/
 
 #footer {
@@ -426,11 +430,11 @@ textarea {
 }
 
 #footer-links li:hover {
-  border-left: 20px solid @MainYellow;
+  border-left: 20px solid @MainGreen;
 }
 
 #footer-links a {
-  color: @MainYellow;
+  color: @MainGreen;
   font-weight: bold;
   font-size: 15px;
   letter-spacing: 3px;
@@ -458,14 +462,14 @@ textarea {
 #social-links i {
   display: inline;
   padding: 10px;
-  color: @MainYellow;
+  color: @MainGreen;
   font-size: 10vw;
 }
 
 #social-links i:hover {
-  color: @greyLight;
+  color: @DarkGrey;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: @MainYellow;
+  -webkit-text-stroke-color: @MainGreen;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -489,6 +493,18 @@ textarea {
 }
 
 @media screen and (max-width: 720px) {
+  #form-container {
+    vertical-align: middle;
+    position: relative;
+    left: 13%;
+    margin-bottom: 100px;
+    padding: 5%;
+    width: 75%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px #282828;
+    background-color: #282828;
+  }
+
   #social-links {
     float: right;
     justify-content: space-around;

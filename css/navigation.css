@@ -1,5 +1,5 @@
 .logo h4 a {
-  color: rgba(255, 255, 0, 0.85);
+  color: #39ff14;
   font-weight: bold;
   font-size: 28px;
   letter-spacing: -2px;
@@ -19,6 +19,11 @@ nav {
   overflow: hidden;
   z-index: 2;
 }
+nav img {
+  height: 50px;
+  width: auto;
+  margin: 5px 0 -1px 0;
+}
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -31,10 +36,10 @@ nav {
   transition: 0.3s;
 }
 .nav-links li:hover {
-  border-left: 20px solid rgba(255, 255, 0, 0.85);
+  border-left: 20px solid #39ff14;
 }
 .nav-links a {
-  color: rgba(255, 255, 0, 0.85);
+  color: #39ff14;
   font-weight: bold;
   font-size: 15px;
   letter-spacing: 3px;
@@ -50,7 +55,7 @@ nav {
 .qian div {
   width: 25px;
   height: 3px;
-  background-color: rgba(255, 255, 0, 0.85);
+  background-color: #39ff14;
   margin: 5px;
   transition: all 0.2s ease;
 }
